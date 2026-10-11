@@ -1,0 +1,15 @@
+
+.venv/
+__pycache__/
+*.py[cod]
+
+# Private configuration
+.env
+.streamlit/secrets.toml
+
+# Uploaded files
+uploads/*
+!uploads/.gitkeep
+
+# Temporary files
+.DS_Store

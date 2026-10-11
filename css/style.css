@@ -1,0 +1,201 @@
+
+/* Election Management System - Government Portal Theme */
+
+:root {
+    --portal-navy: #12345A;
+    --portal-blue: #1C4E80;
+    --portal-saffron: #E5A823;
+    --portal-green: #287447;
+    --portal-background: #F3F6FA;
+    --portal-surface: #FFFFFF;
+    --portal-border: #D8E1EB;
+    --portal-text: #233447;
+    --portal-muted: #63758A;
+}
+
+/* Main application background */
+.stApp {
+    background-color: var(--portal-background);
+    color: var(--portal-text);
+}
+
+/* Main content spacing */
+.main .block-container {
+    max-width: 1440px;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+}
+
+/* Sidebar */
+[data-testid="stSidebar"] {
+    background-color: var(--portal-navy);
+    border-right: 3px solid var(--portal-saffron);
+}
+
+[data-testid="stSidebar"] * {
+    color: #FFFFFF;
+}
+
+[data-testid="stSidebar"] [data-testid="stMarkdownContainer"] p {
+    color: #FFFFFF;
+}
+
+[data-testid="stSidebar"] [data-testid="stRadio"] label,
+[data-testid="stSidebar"] [data-testid="stCheckbox"] label {
+    color: #FFFFFF;
+}
+
+/* Headings */
+h1, h2, h3 {
+    color: var(--portal-navy);
+    font-weight: 700;
+}
+
+h1 {
+    padding-bottom: 0.55rem;
+    border-bottom: 3px solid var(--portal-saffron);
+}
+
+h2, h3 {
+    margin-top: 1rem;
+}
+
+/* Buttons */
+.stButton > button,
+.stDownloadButton > button {
+    background-color: var(--portal-navy);
+    color: #FFFFFF;
+    border: 1px solid var(--portal-navy);
+    border-radius: 6px;
+    min-height: 2.5rem;
+    font-weight: 600;
+    transition: background-color 0.2s ease;
+}
+
+.stButton > button:hover,
+.stDownloadButton > button:hover {
+    background-color: var(--portal-blue);
+    color: #FFFFFF;
+    border-color: var(--portal-blue);
+}
+
+/* Input fields */
+.stTextInput input,
+.stTextArea textarea,
+.stNumberInput input,
+.stDateInput input,
+.stTimeInput input {
+    background-color: #FFFFFF;
+    color: var(--portal-text);
+    border: 1px solid #BBC9D8;
+    border-radius: 5px;
+}
+
+/* Select boxes */
+.stSelectbox [data-baseweb="select"] > div,
+.stMultiSelect [data-baseweb="select"] > div {
+    background-color: #FFFFFF;
+    border-color: #BBC9D8;
+    border-radius: 5px;
+}
+
+/* Tabs */
+.stTabs [data-baseweb="tab-list"] {
+    gap: 8px;
+    border-bottom: 1px solid var(--portal-border);
+}
+
+.stTabs [data-baseweb="tab"] {
+    color: var(--portal-navy);
+    font-weight: 600;
+}
+
+.stTabs [aria-selected="true"] {
+    border-bottom: 3px solid var(--portal-saffron);
+}
+
+/* Metrics and cards */
+[data-testid="stMetric"] {
+    background-color: var(--portal-surface);
+    padding: 1rem;
+    border: 1px solid var(--portal-border);
+    border-top: 4px solid var(--portal-navy);
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(18, 52, 90, 0.05);
+}
+
+[data-testid="stMetricLabel"] {
+    color: var(--portal-muted);
+    font-weight: 600;
+}
+
+[data-testid="stMetricValue"] {
+    color: var(--portal-navy);
+    font-weight: 700;
+}
+
+/* Tables and dataframes */
+[data-testid="stDataFrame"],
+[data-testid="stTable"] {
+    border: 1px solid var(--portal-border);
+    border-radius: 6px;
+}
+
+/* Expanders */
+[data-testid="stExpander"] {
+    background-color: #FFFFFF;
+    border: 1px solid var(--portal-border);
+    border-radius: 6px;
+}
+
+/* Alerts and status messages */
+[data-testid="stAlert"] {
+    border-radius: 6px;
+}
+
+/* Horizontal separators */
+hr {
+    border-color: var(--portal-border);
+}
+
+/* Form containers */
+[data-testid="stForm"] {
+    background-color: #FFFFFF;
+    border: 1px solid var(--portal-border);
+    border-radius: 8px;
+    padding: 1.25rem;
+}
+
+/* Links */
+a {
+    color: var(--portal-blue);
+}
+
+/* Footer text and secondary text */
+.portal-subtitle {
+    color: var(--portal-muted);
+    font-size: 0.95rem;
+}
+
+.portal-banner {
+    background-color: var(--portal-navy);
+    color: #FFFFFF;
+    padding: 1rem 1.25rem;
+    border-left: 5px solid var(--portal-saffron);
+    border-radius: 6px;
+    margin-bottom: 1.25rem;
+}
+
+.portal-banner h3 {
+    color: #FFFFFF;
+    margin-top: 0;
+}
+
+/* Smaller screens */
+@media (max-width: 768px) {
+    .main .block-container {
+        padding-top: 1rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
